@@ -1,0 +1,21 @@
+// 特殊字符字体
+@font-face {
+  font-family: myFont;
+  src: url('https://s1.zhuanstatic.com/common/cycle/font/akrobat-extrabold.woff.ttf');
+}
+@font-face {
+  font-family: akrobatBold;
+  src: url('https://s1.zhuanstatic.com/common/platform/Akrobat-Bold.ttf');
+}
+@font-face {
+  font-family: BebasNeueBold;
+  src: url('https://s1.zhuanstatic.com/common/platform/BebasNeue-Bold.ttf');
+}
+
+#app {
+  & > div:first-of-type {
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: $bg;
+  }
+}
