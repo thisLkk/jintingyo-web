@@ -7,6 +7,7 @@
 export default {
   name: 'App',
   created() {
+    document.title = '记录生活中的点点滴滴'
     let u = navigator.userAgent;
     // let isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
     let isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端

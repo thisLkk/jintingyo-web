@@ -1,7 +1,7 @@
 import routesConfig from './route'
 import { createRouter, createWebHistory } from 'vue-router'
 const router = createRouter({
-  history: createWebHistory('/jintingyo-web/'),
+  history: createWebHistory('/'),
   routes: routesConfig
 })
 router.beforeEach((to, from, next) => {

@@ -2,7 +2,7 @@
   <div class="header">
     <div class="header-logo">
       <p class="header-logo-title">锦瑟华年</p>
-      <p class="header-logo-subTitle">青春如歌，不负韶华</p>
+      <p class="header-logo-subTitle">记录生活中的点点滴滴</p>
     </div>
     <div class="header-nav">
       <el-menu :default-active="activeIndex"

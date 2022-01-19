@@ -5,7 +5,7 @@ const resolve = (pathname = '') => {
 
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/jintingyo-web/'
+    ? '/'
     : '/',
   css: {
     loaderOptions: {
