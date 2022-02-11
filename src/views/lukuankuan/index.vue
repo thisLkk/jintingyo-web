@@ -13,6 +13,7 @@
     <div class="lkk-honor">
       <honor></honor>
     </div>
+    <div class="lkk-bottom-scroll">▼ ▼ ▼ ▼</div>
   </div>
 </template>
 <script>
@@ -35,8 +36,43 @@ export default {
   overflow: auto;
   background-color: #1f1f2a;
   background-image: url('~@/assets/img/lkk/lkk-cur.png');
-  background-position: 25% center;
+  background-position: 15% center;
   background-repeat: no-repeat;
   background-size: 410px 405px;
+  &-bottom-scroll {
+    position: fixed;
+    left: 50%;
+    margin-left: -50px;
+    bottom: 20px;
+    width: 100px;
+    text-align: center;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+    opacity: 0.5;
+    color: white;
+    font-weight: bold;
+    animation-name: bottomScroll;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-play-state: running;
+  }
+  @keyframes bottomScroll {
+      0% {
+        bottom: 20px;
+        opacity: 0.1;
+      }
+      50% {
+        bottom: 40px;
+        opacity: 0.7;
+      }
+      100% {
+        bottom: 20px;
+        opacity: 0.1;
+      }
+    }
 }
 </style>

@@ -26,10 +26,10 @@ export default {
     }
   },
   created() {
-    this.innerWidth = window.innerWidth
+    this.innerWidth = window.innerWidth - 20
     this.innerHeight = window.innerHeight
     window.addEventListener('resize', () => {
-      this.innerWidth = window.innerWidth
+      this.innerWidth = window.innerWidth - 20
       this.innerHeight = window.innerHeight
     })
   },
@@ -72,7 +72,7 @@ export default {
       animation-name: infoOne;
       animation-duration: 10s;
       animation-timing-function: linear;
-      animation-delay: 5s;
+      animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: normal;
       animation-play-state: running;
@@ -103,9 +103,9 @@ export default {
       background: url('~@/assets/img/lkk/info-3.png') center no-repeat;
       background-size: contain;
       animation-name: infoThree;
-      animation-duration: 8s;
+      animation-duration: 7s;
       animation-timing-function: linear;
-      animation-delay: 5s;
+      animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: normal;
       animation-play-state: running;
@@ -136,9 +136,9 @@ export default {
       background: url('~@/assets/img/lkk/info-2.png') center no-repeat;
       background-size: contain;
       animation-name: infoTwo;
-      animation-duration: 6s;
+      animation-duration: 12s;
       animation-timing-function: linear;
-      animation-delay: 5s;
+      animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: normal;
       animation-play-state: running;
@@ -169,9 +169,9 @@ export default {
       background: url('~@/assets/img/lkk/info-4.png') center no-repeat;
       background-size: contain;
       animation-name: infoFour;
-      animation-duration: 5s;
+      animation-duration: 10s;
       animation-timing-function: linear;
-      animation-delay: 5s;
+      animation-delay: 0s;
       animation-iteration-count: infinite;
       animation-direction: normal;
       animation-play-state: running;
@@ -183,7 +183,7 @@ export default {
         transform: rotateY(-30deg);
       }
       50% {
-        top: 100px;
+        top: 200px;
         transform: rotateX(80deg);
         transform: rotateY(80deg);
       }
