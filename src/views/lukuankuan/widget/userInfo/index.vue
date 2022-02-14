@@ -26,10 +26,10 @@ export default {
     }
   },
   created() {
-    this.innerWidth = window.innerWidth - 20
+    this.innerWidth = window.innerWidth
     this.innerHeight = window.innerHeight
     window.addEventListener('resize', () => {
-      this.innerWidth = window.innerWidth - 20
+      this.innerWidth = window.innerWidth
       this.innerHeight = window.innerHeight
     })
   },
@@ -56,14 +56,15 @@ export default {
   }
   &-wrap {
     position: absolute;
-    top: 30%;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     &-one {
       position: absolute;
-      top: 10px;
+      top: 28%;
       left: 15%;
       width: 60px;
       height: 160px;
@@ -79,24 +80,24 @@ export default {
     }
     @keyframes infoOne {
       0% {
-        top: 10px;
+        top: 28%;
         transform: rotateX(45deg);
         transform: rotateY(60deg);
       }
       50% {
-        top: 100px;
+        top: 50%;
         transform: rotateX(0deg);
         transform: rotateY(0deg);
       }
       100% {
         transform: rotateX(45deg);
         transform: rotateY(60deg);
-        top: 10px;
+        top: 28%;
       }
     }
     &-three {
       position: absolute;
-      top: 10px;
+      top: 23%;
       left: 55%;
       width: 60px;
       height: 160px;
@@ -112,24 +113,24 @@ export default {
     }
     @keyframes infoThree {
       0% {
-        top: 10px;
+        top: 23%;
         transform: rotateX(60deg);
         transform: rotateY(80deg);
       }
       50% {
-        top: 100px;
+        top: 50%;
         transform: rotateX(-60deg);
         transform: rotateY(-60deg);
       }
       100% {
         transform: rotateX(60deg);
         transform: rotateY(80deg);
-        top: 10px;
+        top: 23%;
       }
     }
     &-two {
       position: absolute;
-      top: -50px;
+      top: 20%;
       left: 35%;
       width: 60px;
       height: 160px;
@@ -145,24 +146,24 @@ export default {
     }
     @keyframes infoTwo {
       0% {
-        top: -50px;
+        top: 20%;
         transform: rotateX(0deg);
         transform: rotateY(0deg);
       }
       50% {
-        top: 150px;
+        top: 60%;
         transform: rotateX(45deg);
         transform: rotateY(60deg);
       }
       100% {
         transform: rotateX(0deg);
         transform: rotateY(0deg);
-        top: -50px;
+        top: 20%;
       }
     }
     &-four {
       position: absolute;
-      top: -20px;
+      top: 28%;
       left: 75%;
       width: 60px;
       height: 160px;
@@ -178,19 +179,19 @@ export default {
     }
     @keyframes infoFour {
       0% {
-        top: -20px;
+        top: 18%;
         transform: rotateX(-30deg);
         transform: rotateY(-30deg);
       }
       50% {
-        top: 200px;
+        top: 50%;
         transform: rotateX(80deg);
         transform: rotateY(80deg);
       }
       100% {
         transform: rotateX(30deg);
         transform: rotateY(30deg);
-        top: -20px;
+        top: 18%;
       }
     }
   }

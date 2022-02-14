@@ -21,6 +21,12 @@
         <div class="honor-main-article-subTitle">闲庭信步聊前端 - 一文摸清ES拷贝深浅</div>
       </div>
     </div>
+    <div class="honor-footer">
+      <div class="honor-footer-tips">过完这个冬天，明年依旧春暖花开</div>
+      <div class="honor-footer-icp">
+        <a href="https://beian.miit.gov.cn" target="_blank">豫ICP备19043657号-1</a>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -33,10 +39,10 @@ export default {
     }
   },
   created() {
-    this.innerWidth = window.innerWidth - 20
+    this.innerWidth = window.innerWidth
     this.innerHeight = window.innerHeight
     window.addEventListener('resize', () => {
-      this.innerWidth = window.innerWidth- 20
+      this.innerWidth = window.innerWidth
       this.innerHeight = window.innerHeight
     })
   },
@@ -48,10 +54,36 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.h5 {
+  .honor {
+    &-main {
+      width: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0 10px;
+      margin-left: 0;
+      background: rgba(31, 31, 42, 0.7);
+      &-title {
+        padding-top: 20px;
+        font-size: 20px;
+        &::after {
+          display: none;
+        }
+      }
+      &-subTitle {
+        font-size: 20px;
+      }
+    }
+    &-footer {
+      background: rgb(31, 31, 42);
+    }
+  }
+}
 .honor {
   background: rgba(0, 0, 0, 0);
   color: #fff;
   position: relative;
+  overflow: hidden;
   &-main {
     position: absolute;  
     left: 50%;
@@ -126,9 +158,31 @@ export default {
           color: #F8C91C;
         }
         .img-wrap {
-          display: block;
+          // display: block;
         }
       }
+    }
+  }
+  &-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    height: 80px;
+    overflow: hidden;
+    z-index: 11;
+    &-tips {
+      color: #b3b2b2;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
+    }
+    &-icp {
+      color: #b3b2b2;
+      font-size: 12px;
+      text-align: center;
+      margin-top: 20px;
     }
   }
 }

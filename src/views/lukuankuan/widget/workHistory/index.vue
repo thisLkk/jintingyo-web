@@ -39,10 +39,10 @@ export default {
     }
   },
   created() {
-    this.innerWidth = window.innerWidth - 20
+    this.innerWidth = window.innerWidth
     this.innerHeight = window.innerHeight
     window.addEventListener('resize', () => {
-      this.innerWidth = window.innerWidth - 20
+      this.innerWidth = window.innerWidth
       this.innerHeight = window.innerHeight
     })
   },
@@ -54,11 +54,36 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.h5 {
+  .workHistory {
+    &-main {
+      width: 100%;
+      padding: 0 10px;
+      box-sizing: border-box;
+      &-header {
+        margin-bottom: 80px;
+        &-title {
+          font-size: 30px;
+        }
+        &-subTitle {
+          font-size: 20px;
+        }
+      }
+      &-zz {
+        height: 120px;
+        &-lego {
+          display: none;
+        }
+      }
+    }
+  }
+}
 .workHistory {
   position: relative;
   background-image: linear-gradient(#0d1e26, #1f1f2a);
   color: #fff;
   padding-bottom: 200px;
+  overflow: hidden;
   &-main {
     width: 1000px;
     margin: 0 auto;
