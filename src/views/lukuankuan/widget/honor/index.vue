@@ -3,22 +3,27 @@
   <div class="honor" :style="{ width: innerWidth + 'px', height: innerHeight + 'px' }">
     <div class="honor-main">
       <div class="honor-main-title">Harvest</div>
-      <div class="honor-main-medal">
-        <div class="honor-main-medal-title">勋章</div>
-        <div class="honor-main-medal-subTitle">转转社会责任小组倡导者</div>
-        <div class="img-wrap"></div>
+      <div class="honor-main-item">
+        <div class="honor-main-item-img img-1"></div>
+        <div class="honor-main-item-title">
+          <div>转转社会责任小组倡导者</div>
+          <p>为进一步驱动转转使命的践行</p>
+          <p>让更多人感知到可持续和闲置交易的意义</p>
+        </div>
       </div>
-      <div class="honor-main-medal">
-        <div class="honor-main-medal-title">勋章</div>
-        <div class="honor-main-medal-subTitle">转转月度文章最佳获得者</div>
+      <div class="honor-main-item">
+        <div class="honor-main-item-img img-2"></div>
+        <div class="honor-main-item-title">
+          <div>大转转FE公众号月度最佳作者</div>
+          <p>定期分享一些团队对前端的想法与沉淀</p>
+        </div>
       </div>
-      <div class="honor-main-article" @click="urlHandle('https://mp.weixin.qq.com/s/OpuxWY89TYeyDqC86BVe2g')">
-        <div class="honor-main-article-title">文章</div>
-        <div class="honor-main-article-subTitle">见微知著 - npm包的基础建设如此简单</div>
-      </div>
-      <div class="honor-main-article" @click="urlHandle('https://mp.weixin.qq.com/s/ZSPkUZo1lALVM8i8HeInPA')">
-        <div class="honor-main-article-title">文章</div>
-        <div class="honor-main-article-subTitle">闲庭信步聊前端 - 一文摸清ES拷贝深浅</div>
+      <div class="honor-main-item">
+        <div class="honor-main-item-img img-3"></div>
+        <div class="honor-main-item-title">
+          <div>个人公众号：前端每日资讯</div>
+          <p>查阅外网最新前端资讯并整理分享</p>
+        </div>
       </div>
     </div>
     <div class="honor-footer">
@@ -110,56 +115,50 @@ export default {
         border-radius: 8px;
       }
     }
-    &-article, &-medal {
-      margin-left: 100px;
-      margin-top: 20px;
+    &-item {
+      margin-left: 40px;
+      margin-top: 30px;
       cursor:pointer;
-      position: relative;
-      .img-wrap {
-        position: absolute;
-        bottom: 0;
-        left: -120px;
-        display: none;
+      display: flex;
+      &-img {
+        flex-shrink: 0;
         width: 100px;
-        height: 80px;
-        background: #fff;
+        height: 100px;
+        margin-right: 10px;
+        opacity: 0.5;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        &.img-1 {
+          background-image: url('~@/assets/img/lkk/honor-1.jpg');
+        }
+        &.img-2 {
+          background-image: url('~@/assets/img/lkk/honor-2.jpg');
+        }
+        &.img-3 {
+          background-image: url('~@/assets/img/lkk/gzh-qrcode.jpg');
+        }
       }
-
       &-title {
-        font-size: 18px;
-        display: inline-block;
-        margin-right: 8px;
-        font-weight: bold;
-      }
-      &-subTitle {
-        display: inline-block;
-      }
-      &::after {
-        content: '';
-        position: absolute;
-        background: #F8C91C;
-        bottom: 2px;
-        left: 0;
-        width: 0;
-        transition: all 1s cubic-bezier(0.08, 0.96, 0.4, 0.99);
+        display: flex;
+        flex-wrap: wrap;
+        div {
+          flex-shrink: 0;
+          width: 100%;
+          font-size: 16px;
+        }
+        p {
+          padding-left: 8px;
+          width: 100%;
+          flex-shrink: 0;
+          font-size: 12px;
+        }
       }
       &:hover {
-        &::after {
-          content: '';
-          position: absolute;
-          background: #F8C91C;
-          bottom: 2px;
-          left: 0;
-          width: 40px;
-          height: 10px;
-          opacity: 0.3;
+        .honor-main-item-img {
+          opacity: 1;
         }
-        div {
-          color: #F8C91C;
-        }
-        .img-wrap {
-          // display: block;
-        }
+        color: #F8C91C;
       }
     }
   }
