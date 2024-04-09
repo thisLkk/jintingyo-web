@@ -9,6 +9,10 @@
     <div class="lkk-work">
       <work-history></work-history>
     </div>
+    <!-- 生活 -->
+    <div class="lkk-work">
+      <life></life>
+    </div>
     <!-- 荣誉 -->
     <div class="lkk-honor">
       <honor></honor>
@@ -19,13 +23,15 @@
 <script>
 import UserInfo from './widget/userInfo/index.vue'
 import WorkHistory from './widget/workHistory/index.vue'
+import Life from './widget/life/index.vue'
 import Honor from './widget/honor/index.vue'
 export default {
   name: "Lkk",
   components: {
     UserInfo,
     WorkHistory,
-    Honor
+    Honor,
+    Life
   },
   created() {}
 };

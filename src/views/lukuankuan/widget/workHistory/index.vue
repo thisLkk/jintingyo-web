@@ -7,20 +7,68 @@
         <div class="workHistory-main-header-subTitle">Past work experience</div>
       </div>
       <!-- 转转 -->
-      <div class="workHistory-main-zz" @click="urlHandle('https://www.zhuanzhuan.com/')">
+      <!-- <div class="workHistory-main-zz" @click="urlHandle('https://www.zhuanzhuan.com/')">
         <div class="workHistory-main-zz-lego"></div>
         <div class="workHistory-main-zz-bg"></div>
+      </div> -->
+      <div class="workHistory-main-item">
+        <div class="workHistory-main-item-title">北京转转精神科技有限公司</div>
+        <div class="workHistory-main-item-time">2020.07.14 - 至今</div>
+        <div class="workHistory-main-item-project">
+          <div class="workHistory-main-item-project-item">
+            - 转转前端中台视觉库的贡献者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            - 采货侠Native与H5通信的sdk维护者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            - 采货侠发布映射管理后台的维护者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            - 采货侠小程序及H5卖场的维护者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            .....
+          </div>
+        </div>
+      </div>
+      <div class="workHistory-main-item">
+        <div class="workHistory-main-item-title">度小满金融（原百度金融）</div>
+        <div class="workHistory-main-item-time">2018.12.08 - 2020.07.13</div>
+        <div class="workHistory-main-item-project">
+          <div class="workHistory-main-item-project-item">
+            - 康波财经官网的维护者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            - 度小满有钱花人拉人运营活动开发者
+          </div>
+          <div class="workHistory-main-item-project-item">
+            .....
+          </div>
+        </div>
+      </div>
+      <div class="workHistory-main-item">
+        <div class="workHistory-main-item-title">江苏盈达科技有限公司（外派银河证券）</div>
+        <div class="workHistory-main-item-time">2017.12.01 - 2018.12.07</div>
+        <div class="workHistory-main-item-project">
+          <div class="workHistory-main-item-project-item">
+            - 银河用户后台管理系统
+          </div>
+          <div class="workHistory-main-item-project-item">
+            .....
+          </div>
+        </div>
       </div>
       <!-- 度小满 -->
-      <div class="workHistory-main-dxm" @click="urlHandle('http://www.duxiaoman.com/index')">
+      <!-- <div class="workHistory-main-dxm" @click="urlHandle('http://www.duxiaoman.com/index')">
         <div class="workHistory-main-dxm-lego"></div>
         <div class="workHistory-main-dxm-bg"></div>
-      </div>
+      </div> -->
       <!-- 软通动力 -->
-      <div class="workHistory-main-rtdl" @click="urlHandle('https://www.isoftstone.com/')">
+      <!-- <div class="workHistory-main-rtdl" @click="urlHandle('https://www.isoftstone.com/')">
         <div class="workHistory-main-rtdl-lego"></div>
         <div class="workHistory-main-rtdl-bg"></div>
-      </div>
+      </div> -->
       <!-- 高伟达 -->
       <!-- <div class="workHistory-main-rtdl" @click="urlHandle('https://www.isoftstone.com/')">
         <div class="workHistory-main-rtdl-lego"></div>
@@ -108,6 +156,24 @@ export default {
         margin-top: 24px;
         font-size: 28px;
         opacity: 0.5;
+      }
+    }
+    &-item {
+      &-title {
+        font-size: 38px;
+        padding-left: 24px;
+      }
+      &-time {
+        font-size: 24px;
+        padding-left: 28px;
+      }
+      &-project {
+        padding-left: 50px;
+        margin-top: 14px;
+        &-item {
+          margin-top: 12px;
+          font-size: 16px;
+        }
       }
     }
     &-zz {
