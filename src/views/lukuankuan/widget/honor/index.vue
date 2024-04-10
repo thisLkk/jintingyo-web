@@ -21,8 +21,8 @@
       <div class="honor-main-item">
         <div class="honor-main-item-img img-3"></div>
         <div class="honor-main-item-title">
-          <div>个人公众号：前端每日资讯</div>
-          <p>查阅外网最新前端资讯并整理分享</p>
+          <!-- <div>个人公众号：前端每日资讯</div> -->
+          <p>查阅最新前端资讯并整理分享</p>
         </div>
       </div>
     </div>
@@ -136,7 +136,7 @@ export default {
           background-image: url('~@/assets/img/lkk/honor-2.jpg');
         }
         &.img-3 {
-          background-image: url('~@/assets/img/lkk/gzh-qrcode.jpg');
+          background-image: url('~@/assets/img/lkk/honor-2.jpg');
         }
       }
       &-title {
